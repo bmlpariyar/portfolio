@@ -1,0 +1,66 @@
+:root {
+    color-scheme: light dark;
+  }
+
+  .theme-transition {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  /* Tailwind dark mode configuration */
+  @media (prefers-color-scheme: dark) {
+    html.dark {
+      --tw-bg-opacity: 1;
+      --tw-text-opacity: 1;
+    }
+  }
+
+  /* Override Tailwind dark mode classes */
+  html.dark .dark\:bg-gray-900 {
+    background-color: rgb(17 24 39);
+  }
+
+  html.dark .dark\:bg-gray-800 {
+    background-color: rgb(31 41 55);
+  }
+
+  html.dark .dark\:bg-gray-700 {
+    background-color: rgb(55 65 81);
+  }
+
+  html.dark .dark\:text-white {
+    color: rgb(255 255 255);
+  }
+
+  html.dark .dark\:text-gray-300 {
+    color: rgb(209 213 219);
+  }
+
+  html.dark .dark\:text-gray-400 {
+    color: rgb(156 163 175);
+  }
+
+  html.dark .dark\:border-gray-600 {
+    border-color: rgb(75 85 99);
+  }
+
+  /* Light mode specific overrides */
+  html.light .bg-gray-100 {
+    background-color: rgb(243 244 246);
+  }
+
+  html.light .bg-white {
+    background-color: rgb(255 255 255);
+  }
+
+  html.light .text-gray-800 {
+    color: rgb(31 41 55);
+  }
+
+  html.light .text-gray-600 {
+    color: rgb(75 85 99);
+  }
